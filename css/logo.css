@@ -1,0 +1,36 @@
+#onl-logo{
+    grid-area: logo;
+    background-color: var(--black);
+}
+
+#onl-logo div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+#onl-logo img{
+    height: 100%;
+}
+
+#onl-logo i{
+    display: none;
+    visibility: hidden;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+@media(max-width: 1000px){
+    #onl-logo div{
+        justify-content: flex-start;
+    }
+    #onl-logo i{
+        margin-right: 24px;
+        display: block;
+        visibility: visible;
+    }
+}

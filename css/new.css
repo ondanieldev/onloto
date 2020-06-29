@@ -1,0 +1,132 @@
+/* NEW */
+#onl-main .numbers-container h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+#onl-main .numbers-container h3 b{
+    color: var(--purple);
+}
+
+#onl-main .numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#onl-main .circle{
+    background-color: var(--white);
+    padding: 12px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 12px 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--purple);
+    color: var(--black);
+    transition: all 0.15s linear;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#onl-main .circle-click:hover{
+    background-color: var(--purple);
+    color: var(--white);
+    cursor: pointer;
+}
+
+#onl-main .circle-active{
+    background-color: var(--purple);
+    color: var(--white);
+    border: 2px solid var(--black);
+}
+
+#onl-main .numbers-container button{
+    width: 200px;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 8px;
+    margin-top: 24px;
+    border: 2px solid var(--purple);
+    transition: all 0.15s linear;
+}
+
+#onl-main .numbers-container button:hover{
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: bold;
+}
+
+#onl-main .clues-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#onl-main .clues-container{
+    margin-top: 24px;
+}
+
+#onl-main .clues-more{
+    margin-right: 24px;
+}
+
+#onl-main .clues{
+    display: flex;
+    flex-direction: column;
+}
+
+#onl-main .clues .circle{
+    border: none;
+    border-color: var(--black);
+}
+
+#onl-main .clues-title{
+    margin-bottom: 24px;
+}
+
+#onl-main .clues-more .clues-title b{
+    color: var(--red);
+}
+
+#onl-main .clues-more .circle{
+    background-color: var(--light-red);
+}
+
+#onl-main .clues-less .clues-title b{
+    color: var(--blue);
+}
+
+#onl-main .clues-less .circle{
+    background-color: var(--light-blue);
+}
+
+@media(max-width: 1000px){
+    #onl-main .circle-click:not(.circle-active):hover{
+        background-color: var(--white);
+        color: var(--black);
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 650px){
+    #onl-main .clues-container{
+        flex-direction: column;
+    }
+    #onl-main .clues-more{
+        margin-bottom: 24px;
+    }
+}

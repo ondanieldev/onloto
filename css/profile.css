@@ -1,0 +1,90 @@
+#onl-main .user-image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 12px;
+}
+
+#onl-main .user-image i{
+    color: var(--purple);
+    font-size: 10rem;
+}
+
+#onl-main .user-image span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#onl-main .user-info{
+    width: 50%;
+    margin: 24px 0;    
+}
+
+#onl-main .input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 48px;
+}
+
+#onl-main .input-pass{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#onl-main .input-pass:first-child{
+    flex: 1;
+}
+
+#onl-main .input-group label{
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+#onl-main .input-group input{
+    background-color: transparent;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--black);
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid var(--purple);
+}
+
+#onl-main .input-group button{
+    margin-left: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--white);
+    padding: 12px;
+    background-color: var(--purple);
+    border:none;
+    border-radius: 8px;
+    border: 2px solid var(--purple);
+    transition: all 0.15s linear;
+}
+
+#onl-main .input-group button:hover{
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: bold;
+}
+
+@media(max-width: 790px){
+    #onl-main .input-pass{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #onl-main .input-pass button{
+        margin: 0;
+        margin-top: 24px;
+    }
+}

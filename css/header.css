@@ -1,0 +1,45 @@
+#onl-header{
+    grid-area: header;
+    background-color: var(--white);
+    padding: 0 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+#onl-header div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 12px;
+}
+
+#onl-header span{
+    color: var(--black);
+    font-size: 0.8rem;
+}
+
+#onl-header b{
+    color: var(--purple);
+    font-size: 1rem;
+}
+
+#onl-header i{
+    color: var(--black);
+    font-size: 1.75rem;
+    cursor: pointer;
+    transition: transform 0.15s linear;
+}
+
+#onl-header i:hover{
+    color: var(--purple);
+    transform: rotate(45deg);
+}
+
+@media(max-width: 500px){
+    #onl-header span, #onl-header b{
+        visibility: hidden;
+        display: none;
+    }
+}

@@ -1,0 +1,128 @@
+#onl-main .saveds-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#onl-main .saved{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    margin: 0 12px 12px 0;
+}
+
+#onl-main .saved div{
+    display: flex;
+    align-items: center;
+}
+
+#onl-main .saved span{
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+}
+
+#onl-main .saved button{
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-right: 12px;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+    transition: all 0.15s linear;
+}
+#onl-main .saved button:hover{
+    background-color: var(--purple);
+    color: var(--white);
+    border: 1px solid var(--purple);
+    font-weight: bold;
+}
+
+#onl-main .saved i{
+    cursor: pointer;
+    color: var(--black);
+    font-size: 1.3rem;
+    transition: all 0.15s linear;
+}
+
+#onl-main .saved i:hover{
+    color: var(--purple);
+    transform: scale(1.1);
+}
+
+#onl-main .popup-games{
+    height: 500px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#onl-main .games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    overflow-y: scroll;
+}
+
+#onl-main .game{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 8px 8px 12px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+    background-color: var(--purple);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#onl-main .game:not(:nth-of-type(3n)){
+    margin-right: 24px;
+}
+
+#onl-main .game:last-of-type{
+    margin-right: 0;
+}
+
+#onl-main .game .circle{
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    font-size: .8rem;
+    border: none;
+    margin: 0 4px 4px 0;
+}
+
+#onl-main .popup-games .button-group{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#onl-main .popup-games button{
+    background-color: var(--purple);
+    margin-bottom: 24px;
+}
+
+@media(max-width: 660px){
+    #onl-main .popup-games .game{
+        width: 90%;
+        margin-right: 0;
+        overflow: visible;
+    }
+}
