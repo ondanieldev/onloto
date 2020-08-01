@@ -1,6 +1,7 @@
 <?php
     session_start();
     require_once('./database/tables.php');
+    require_once('./upnid.php')
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +20,8 @@
     <link rel="stylesheet" href="./css/profile.css"></link>
     <link rel="stylesheet" href="./css/saved.css"></link>
     <link rel="stylesheet" href="./css/login.css"></link>
-    <title>OnLoto</title>
+    <link rel="stylesheet" href="./css/clues.css"></link>
+    <title>Lotofácil Dominante</title>
 </head>
 <body>
 
@@ -42,6 +44,14 @@
                 <a href="?section=saved">
                     <li><i class="fa fa-save"></i><span>Jogos salvos<span></li>
                 </a>
+                <?php if($_SESSION["id"] == 1){ ?>
+                    <a href="?section=clues">
+                        <li><i class="fa fa-cog"></i><span>Configurar dicas<span></li>
+                    </a>
+                <?php } ?>
+                <a href="?section=downloads">
+                    <li><i class="fa fa-download"></i><span>Downloads<span></li>
+                </a>
                 <a href="./functions/logout.php">
                     <li><i class="fa fa-sign-out"></i><span>Sair<span></li>
                 </a>
@@ -61,9 +71,11 @@
                 if(isset($_GET['section'])){
                     $section = $_GET['section'];
                     if($section == 'new') require './pages/new.php';
-                    else if($section == 'new') require './pages/new.php';
                     else if($section == 'profile') require './pages/profile.php';
                     else if($section == 'saved') require './pages/saved.php';
+                    else if($section == 'clues') require './pages/clues.php';
+                    else if($section == 'downloads') require './pages/downloads.php';
+                    else require './pages/new.php';
                 }else{
                     require './pages/new.php';
                 }
@@ -76,18 +88,16 @@
 
     <div id="onl-login">
         <div class="login-container">
-            <!--<form action="./functions/login.php" method="POST">-->
-                <div class="login-title">
-                    <span>Acessar sistema</span>
-                </div>
-                <div class="login-input-group">
-                    <input type="text" name="email" placeholder="E-mail" autocomplete="off" required>
-                    <input type="password" name="password" placeholder="Senha" required>
-                </div>
-                <div class="login-button-group">
-                    <input onclick="login()" type="submit" name="login" value="Entrar">
-                </div>
-            <!--</form>-->
+            <div class="login-title">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="login-input-group">
+                <input type="text" name="email" placeholder="E-mail" autocomplete="off" required>
+                <input type="password" name="password" placeholder="Senha" required>
+            </div>
+            <div class="login-button-group">
+                <input onclick="login()" type="submit" name="login" value="Entrar">
+            </div>
         </div>
     </div>
 

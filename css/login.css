@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: var(--gray);
+    background-color: var(--black);
 }
 
 #onl-login .login-container{
@@ -21,8 +21,8 @@
 
 #onl-login .login-title{
     padding: 24px 0;
-    background-color: var(--purple);
-    border-bottom: 2px solid var(--black);
+    background-color: var(--white);
+    border-bottom: 2px solid var(--purple);
     width: 100%;
     display: flex;
     justify-content: center; 

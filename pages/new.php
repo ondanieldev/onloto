@@ -1,8 +1,7 @@
 <?php
     session_start();
     $availableNumbers = array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25);
-    $clueMoreNumbers = array(13,24,10,11,20,4,1,2,14,25,3,5,23,18,19);
-    $clueLessNumbers = array(8,16,6,7,9,12,21,15,17,22);
+    require('./functions/getClues.php');
 ?>
 
 <div class="title-container">

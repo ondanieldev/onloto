@@ -1,0 +1,29 @@
+.clue-number-input{
+    border-radius: 100%;
+    border: 1px solid var(--purple);
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+    text-align: center;
+    -moz-appearance:textfield;
+    margin: 0;
+    margin-right: 12px;
+}
+
+.circle-remove, .circle-add{
+    cursor: pointer;
+}
+
+.circle-remove:hover{
+    background-color: var(--red) !important;
+}
+
+.circle-add:hover{
+    background-color: var(--green) !important;
+}
+
+.clue-number-input::-webkit-outer-spin-button,
+.clue-number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
