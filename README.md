@@ -15,7 +15,7 @@ As this app does not use environment variables (because the headache called php)
 | archive         | variable     | description                              |
 | --------------- | ------------ | ---------------------------------------- |
 | connection.php  | $server      | The server where your database is placed |
-| connection.php  | $user        | You database user                        |
+| connection.php  | $user        | Your database user                       |
 | connection.php  | $pass        | The password of your database user       |
 | connection.php  | $db          | Your database name                       |
 | integration.php | $onlotoName  | The name of your application             |
@@ -29,4 +29,4 @@ This application has some admin functions. To access them, you need to log in wi
 
 ## Testing the platform
 
-To test the platform, visit [Onloto](http://romeno.onloto.com.br) and use admin@admin.com with the very secret password '123456'. Please, do not change the password.
+To test the platform, visit [Onloto](http://romeno.ondaniel.com.br) and use admin@admin.com with the very secret password '123456'. Please, do not change the password.
