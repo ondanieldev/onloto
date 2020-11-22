@@ -1,7 +1,7 @@
 <?php
     session_start();
     require_once('./database/tables.php');
-    require_once('./upnid.php')
+    require_once('./integration.php')
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/saved.css"></link>
     <link rel="stylesheet" href="./css/login.css"></link>
     <link rel="stylesheet" href="./css/clues.css"></link>
+    <link rel="stylesheet" href="./css/downloads.css"></link>
     <title>Lotofácil Dominante</title>
 </head>
 <body>

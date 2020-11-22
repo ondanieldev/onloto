@@ -1,0 +1,32 @@
+#onl-main .links-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#onl-main .links-container div {
+  margin: 6px;
+  padding: 12px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+  transition: transform 0.15s linear;
+}
+
+#onl-main .links-container i {
+  margin-right: 4px;
+  transition: color 0.15s linear;
+}
+
+#onl-main .links-container a {
+  margin-right: 4px;
+  color: var(--black);
+  transition: color 0.15s linear;
+}
+
+#onl-main .links-container div:hover {
+  transform: scale(1.05);
+  color: var(--purple);
+}
+
+#onl-main .links-container div:hover > a {
+  color: var(--purple);
+}
