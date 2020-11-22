@@ -3,7 +3,7 @@
     $data = json_decode($json);
 
     if(
-        !empty($data->token) && $data->token == '88990c9e7f791db26feb8520a333acff'
+        !empty($data->token) && $data->token == ''
     )
     {
         require('./database/connection.php');
@@ -28,7 +28,7 @@
                             Acesse a Lotofácil Dominante com o seu acesso abaixo:<br><br>
                             <b>E-mail: </b>' . $email . '<br>
                             <b>Senha: </b>' . $password . '<br>
-                            <b>URL: </b><a href="http://acessar.lotofacildominante.com/">http://acessar.lotofacildominante.com/</a>
+                            <b>URL: </b><a href="http://">http://</a>
                         </p>
                     </body>
                 </html>
@@ -37,9 +37,9 @@
             $headers  = 'MIME-Version: 1.0' . "\r\n";
             $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
             $headers .= 'To: ' . $name . ' <' . $email . '>' . "\r\n";
-            $headers .= 'From: Lotofácil Dominante <suportelotodominante@gmail.com>' . "\r\n";
-            $headers .= 'Cc: suportelotodominante@gmail.com' . "\r\n";
-            $headers .= 'Bcc: suportelotodominante@gmail.com' . "\r\n";
+            $headers .= 'From: Lotofácil Dominante <email@gmail.com>' . "\r\n";
+            $headers .= 'Cc: email@gmail.com' . "\r\n";
+            $headers .= 'Bcc: email@gmail.com' . "\r\n";
             
             $sendMail = mail($email, $subject, $message, $headers);
         }catch(Exception $e){
