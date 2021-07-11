@@ -1,14 +1,35 @@
-# Onloto
+<div align="center">
+  <a href="http://romeno.ondaniel.com.br">
+    <div>
+      <h1>Onloto</h1>
+    </div>
+  </a>
+  <br>
+  <br>
+  <div>
+    <a href="https://img.shields.io/github/v/tag/stemDaniel/
+onloto?color=%2368d391&style=for-the-badge">
+      <img src="https://img.shields.io/github/v/tag/stemDaniel/
+onloto?color=%2368d391&style=for-the-badge">
+    </a>
+    <a href="https://img.shields.io/github/license/stemDaniel/
+onloto?color=%2368d391&style=for-the-badge">
+      <img src="https://img.shields.io/github/license/stemDaniel/
+onloto?color=%2368d391&style=for-the-badge">
+    </a>
+  </div>
+  <hr>
+</div>
 
 ## Introduction
 
-System to improve chances to win in 'Lotofácil'.
+Onloto is a system to improve chances to win in 'Lotofácil'.
 
-## External Technologies
+## Integrations
 
 This system integrates with 'Upnid' to detects new buys to automate user register.
 
-## Setting up credentials
+## Running
 
 As this app does not use environment variables (because the headache called php), you need to input your credentials inside the code. To do this, you just need to input values on some variables following the table below:
 
@@ -30,3 +51,7 @@ This application has some admin functions. To access them, you need to log in wi
 ## Testing the platform
 
 To test the platform, visit [Onloto](http://romeno.ondaniel.com.br) and use admin@admin.com with the very secret password '123456'. Please, do not change the password.
+
+## License
+
+MIT © [Daniel Oliveira](https://ondaniel.com.br/)
