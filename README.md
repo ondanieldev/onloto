@@ -6,18 +6,6 @@
   </a>
   <br>
   <br>
-  <div>
-    <a href="https://img.shields.io/github/v/tag/stemDaniel/
-onloto?color=%2368d391&style=for-the-badge">
-      <img src="https://img.shields.io/github/v/tag/stemDaniel/
-onloto?color=%2368d391&style=for-the-badge">
-    </a>
-    <a href="https://img.shields.io/github/license/stemDaniel/
-onloto?color=%2368d391&style=for-the-badge">
-      <img src="https://img.shields.io/github/license/stemDaniel/
-onloto?color=%2368d391&style=for-the-badge">
-    </a>
-  </div>
   <hr>
 </div>
 
